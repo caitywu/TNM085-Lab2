@@ -8,10 +8,10 @@
 
 class Particle {
 
-	glm::vec2 position; //(x,y) corrdinate 
-	glm::vec2 velocity; // m/s
-	glm::vec4 color; //RGBA
-	float life_time;  //s 
+	glm::vec2 position{ 0,0 }; //(x,y) corrdinate 
+	glm::vec2 velocity{ 0,0 }; // m/s
+	glm::vec4 color{ 255, 255, 255, 1 }; //RGBA
+	float life_time{ 10.0 };  //s 
 
 	//constructor
 	Particle(glm::vec2& init_pos, glm::vec2& init_vel, glm::vec4& init_col, float lf) :
